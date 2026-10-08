@@ -283,6 +283,11 @@ a{color:var(--brand)}
 .modal-head h2{margin:0}
 .modal-head button,.close-detail{background:var(--bg);border-radius:50%;width:34px;height:34px;font-size:22px;display:grid;place-items:center}
 .modal input[type=file]{padding:9px}
+.confirm-modal{max-width:420px;border-radius:24px}
+.confirm-modal .muted{line-height:1.8;margin:0 0 4px}
+.confirm-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px;flex-wrap:wrap}
+.danger{background:linear-gradient(180deg,#c0392b,#9b2c20);color:#fff;padding:12px 18px;border-radius:13px;font-weight:700;box-shadow:0 10px 22px rgba(192,57,43,.28);transition:transform .14s ease}
+.danger:hover{transform:translateY(-2px)}
 .detail-drawer{
   position:fixed;z-index:7;inset-block:0;inset-inline-start:0;width:min(390px,100%);
   background:var(--surface);box-shadow:10px 0 44px rgba(29,42,56,.24);
