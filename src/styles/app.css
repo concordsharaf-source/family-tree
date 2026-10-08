@@ -88,6 +88,8 @@ a{color:var(--brand)}
   box-shadow:0 6px 14px var(--shadow);transition:transform .15s ease
 }
 .icon-btn:hover{transform:translateY(-2px)}
+.topbar-actions{display:flex;align-items:center;gap:10px}
+.topbar-add{display:none}
 .main{max-width:1140px;margin:0 auto;padding:34px 20px}
 
 /* ============ الرئيسية ============ */
@@ -202,7 +204,7 @@ a{color:var(--brand)}
   touch-action:none;cursor:grab;user-select:none
 }
 .tree-canvas:active{cursor:grabbing}
-.tree-stage{position:relative;transform-origin:0 0;direction:ltr;transition:transform .12s ease-out;will-change:transform}
+.tree-stage{position:absolute;left:0;top:0;transform-origin:0 0;direction:ltr;transition:transform .12s ease-out;will-change:transform}
 .tree-svg{position:absolute;inset:0;overflow:visible;pointer-events:none}
 .tree-link{fill:none;stroke-linecap:round;stroke-linejoin:round}
 .tree-link.parent{stroke:var(--brand);stroke-width:2.4;opacity:.82}
@@ -307,6 +309,9 @@ a{color:var(--brand)}
   .action-card{min-height:120px}
   .quick-card{right:10px;bottom:88px;left:10px}
   .quick-card div:nth-child(2){flex:1}
+  .app-shell{padding-bottom:186px}
+  .topbar-add{display:grid;background:linear-gradient(150deg,var(--accent),#96661d);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(185,131,47,.4)}
+  .fab{display:none}
   .bottom-nav{gap:0;justify-content:space-around}
   .bottom-nav button{font-size:10px}
   .detail-drawer{inset-inline:0;inset-block-start:auto;border-radius:28px 28px 0 0;max-height:82vh}
