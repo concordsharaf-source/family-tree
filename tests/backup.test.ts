@@ -1,0 +1,1 @@
+import {describe,expect,it} from 'vitest';import {fullName} from '../src/types';describe('بيانات الأشخاص',()=>{it('يبني الاسم الكامل',()=>expect(fullName({id:'1',familyId:'f',firstName:'أحمد',middleName:'بن',lastName:'علي',gender:'male',createdAt:0,updatedAt:0})).toBe('أحمد بن علي'))});
